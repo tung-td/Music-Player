@@ -11,6 +11,7 @@
     9. Scroll active song into view
     10. Play song when click
 */
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -39,68 +40,67 @@ const app = {
         {
             name: "Señorita",
             singer: "Shawn Mendes x Camila Cabello",
-            path: "https://vnso-zn-23-tf-mp3-s1-m-zmp3.zmdcdn.me/e0d59dcc7f8b96d5cf9a/6652135623353309218?authen=exp=1665858081~acl=/e0d59dcc7f8b96d5cf9a/*~hmac=beff8cbe4c460d7c9f3dffcd41fd2661",
+            path: "../Music-Player/Music/Senorita - Shawn Mendes_ Camila Cabello.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/cover/c/e/e/f/ceefcdad646dce8d5efb9ed056e22e33.jpg"
         },
         {
             name: "Sunroof",
             singer: "Nicky Youre x Dazy",
-            path: "https://mp3-s1-m-zmp3.zmdcdn.me/fdc4940e514fb811e15e/7229745453288750947?authen=exp=1665857782~acl=/fdc4940e514fb811e15e/*~hmac=7770894398b950884baa39d9a388a8cf",
+            path: "../Music-Player/Music/Sunroof - Nicky Youre_ Dazy.mp3",
             image:
                 "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/cover/1/7/a/e/17ae054afcb12c3aad084cd5ce88c84d.jpg"
         },
         {
             name: "As It Was",
             singer: "Harry Styles",
-            path: "https://vnso-zn-16-tf-mp3-s1-m-zmp3.zmdcdn.me/397dfae855a9bcf7e5b8/3316510322627274731?authen=exp=1665895869~acl=/397dfae855a9bcf7e5b8/*~hmac=f162495aaf2e15b55c9564ad01e0e9cc",
+            path: "../Music-Player/Music/As It Was - Harry Styles.mp3",
             image:
                 "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/cover/3/5/5/c/355c9290d8b91bcf9f843b792fa05e8f.jpg"
         },
         {
-            name: "Naachne Ka Shaunq",
+            name: "Best Friend",
             singer: "Rex Orange County",
-            path:
-                "https://vnso-zn-16-tf-mp3-320s1-m-zmp3.zmdcdn.me/edaf402d706d9933c07c/7635354546918029300?authen=exp=1665896654~acl=/edaf402d706d9933c07c/*~hmac=04f6fa620877af9d45ec5688c37cbf2a",
+            path: "../Music-Player/Music/Best Friend - Rex Orange County.mp3",
             image: "https://media.pitchfork.com/photos/5daf7411515e4800080955b2/1:1/w_320,c_limit/pony.jpg"
         },
         {
-            name: "Pluto Projector",
+            name: "Television / So Far So Good",
             singer: "Rex Orange County",
-            path: "https://vnno-vn-6-tf-mp3-320s1-m-zmp3.zmdcdn.me/2f6793aa34edddb384fc/7608017747915900161?authen=exp=1665896776~acl=/2f6793aa34edddb384fc/*~hmac=ece7dca357e2ddfb961d2b61ebd17fc5",
+            path: "../Music-Player/Music/Television_ So Far So Good - Rex Orange.mp3",
             image:
                 "https://media.pitchfork.com/photos/5daf7411515e4800080955b2/1:1/w_320,c_limit/pony.jpg"
         },
         {
             name: "Troublemaker",
             singer: "Olly Murs x Flo Rida",
-            path: "https://vnno-vn-5-tf-mp3-320s1-m-zmp3.zmdcdn.me/c4aa6907e040091e5051/632175896883152569?authen=exp=1665897117~acl=/c4aa6907e040091e5051/*~hmac=8f650a389663327e78f7e120942a5b57",
+            path: "../Music-Player/Music/Troublemaker - Olly Murs_ Flo Rida.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/cover/5/0/2/d/502d5fa1fb7a4d4688cfab21d9165323.jpg"
         },
         {
             name: "Grow Up",
             singer: "Olly Murs",
-            path: "https://vnno-vn-6-tf-mp3-320s1-m-zmp3.zmdcdn.me/4213d8bf51f8b8a6e1e9/4804052102389176125?authen=exp=1665897186~acl=/4213d8bf51f8b8a6e1e9/*~hmac=99d82b34c2f2761d15e4354507018804",
+            path: "../Music-Player/Music/Grow Up - Olly Murs.mp3",
             image:
                 "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/cover/8/9/b/0/89b0922d65dd038f30e51f9238573aa8.jpg"
         },
         {
             name: "Moves",
             singer: "Olly Murs x  Snoop Dogg",
-            path: "https://vnso-zn-5-tf-mp3-320s1-m-zmp3.zmdcdn.me/fd9c498662c68b98d2d7/7493855688773216115?authen=exp=1665897252~acl=/fd9c498662c68b98d2d7/*~hmac=3b059ec00f75664740bf4c5fd0d23c34",
+            path: "../Music-Player/Music/Moves - Olly Murs_ Snoop Dogg.mp3",
             image:
                 "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/cover/8/9/b/0/89b0922d65dd038f30e51f9238573aa8.jpg"
         },
         {
             name: "Dance With Me Tonight",
             singer: "Olly Murs",
-            path: "https://vnso-zn-23-tf-mp3-320s1-m-zmp3.zmdcdn.me/2da78308334cda12835d/8855363606247989612?authen=exp=1665897326~acl=/2da78308334cda12835d/*~hmac=04cdbfdfa28a67199fdb8b37d01e4449",
+            path: "../Music-Player/Music/Dance With Me Tonight - Olly Murs.mp3",
             image:
                 "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/covers/4/1/414d6f5d6d72c1405594a9bdf7583485_1322879872.jpg"
         },
         {
             name: "Nothing's Gonna Change My Love For You",
             singer: "Westlife",
-            path: "https://mp3-320s1-m-zmp3.zmdcdn.me/c08a0085a5c14c9f15d0/4754418519380090596?authen=exp=1665897516~acl=/c08a0085a5c14c9f15d0/*~hmac=6c0ec25383886905067d7a432de951b4",
+            path: "../Music-Player/Music/Nothing_s Gonna Change My Love For You -.mp3",
             image:
                 "https://photo-resize-zmp3.zmdcdn.me/w480_r1x1_webp/covers/1/c/1c365655bf106969d67bdae5acf93b4a_1377083460.jpg"
         }
